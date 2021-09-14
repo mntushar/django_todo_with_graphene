@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #third party app
     'graphene_django',
+    'django_filters',
 
     #local app
     'todo_list',
