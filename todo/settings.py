@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -38,11 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #third party app
+    # third party app
     'graphene_django',
     'django_filters',
 
-    #local app
+    # local app
     'todo_list',
 ]
 
@@ -132,7 +133,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-#schema location for Graphene
+# schema location for Graphene
 GRAPHENE = {
     'SCHEMA': 'todo.schema.schema'
 }

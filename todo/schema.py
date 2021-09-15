@@ -1,12 +1,12 @@
 import graphene
-from todo_list.schema import*
+from todo_list import schema
 
 
-class Query(TodoQuery, graphene.ObjectType):
+class Query(schema.TodoQuery, graphene.ObjectType):
     pass
 
 
-class Mutation(Mutation, graphene.ObjectType):
+class Mutation(schema.Mutation, graphene.ObjectType):
     pass
 
 
